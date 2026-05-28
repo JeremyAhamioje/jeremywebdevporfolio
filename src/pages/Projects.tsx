@@ -11,7 +11,7 @@ import { useTheme } from '@/contexts/ThemeContext'
 gsap.registerPlugin(ScrollTrigger)
 
 const HERO_IMAGE =
-  'https://res.cloudinary.com/dz6kxumoo/image/upload/v1778932428/download_17_q9yz8t.jpg'
+  'https://res.cloudinary.com/dz6kxumoo/image/upload/f_auto,q_auto/v1778932428/download_17_q9yz8t.jpg'
 
 export default function ProjectsPage() {
   const { overlayRef, go } = usePageTransition()

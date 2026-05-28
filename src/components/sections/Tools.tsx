@@ -168,6 +168,7 @@ export default function Tools() {
               <img
                 src={tool.src}
                 alt={tool.name}
+                loading="lazy"
                 style={{
                   width: '100%',
                   height: '100%',

@@ -72,6 +72,7 @@ export default function About() {
             <img
               src={PROFILE_IMAGE_URL}
               alt={SITE_NAME}
+              loading="lazy"
               style={{ width: '100%', display: 'block', filter: 'contrast(1.05)', borderRadius: 4 }}
             />
             {/* Volt corner accent */}

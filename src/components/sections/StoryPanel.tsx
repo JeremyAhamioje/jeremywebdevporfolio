@@ -228,7 +228,7 @@ export default function StoryPanel({ panel }: Props) {
         className="panel-bg"
         style={{
           backgroundImage:
-            'url(https://res.cloudinary.com/dz6kxumoo/image/upload/v1778931827/Programmer_Cat_xc7ilj.jpg)',
+            'url(https://res.cloudinary.com/dz6kxumoo/image/upload/f_auto,q_auto/v1778931827/Programmer_Cat_xc7ilj.jpg)',
         }}
       />
 
