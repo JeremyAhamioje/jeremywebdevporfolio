@@ -265,11 +265,11 @@ export interface Affair {
 
 export const AFFAIRS: Affair[] = [
   { label: 'Robotics',           image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80',  href: 'https://portfolio-pa3u.vercel.app/' },
-  { label: 'Motion Design',      image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80',    href: '#' },
-  { label: 'Freelancing',        image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80', href: '#' },
+  { label: 'Motion Design',      image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80',    href: '/motion-design' },
+  { label: 'Freelancing',        image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80', href: '/freelance' },
   { label: 'Engineering',        image: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=800&q=80', href: 'https://portfolio-pa3u.vercel.app/' },
-  { label: 'Product Management', image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',    href: '#' },
-  { label: 'Design',             image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80',    href: '#' },
+  { label: 'Product Management', image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',    href: '/product-management' },
+  { label: 'Design',             image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80',    href: '/design' },
 ]
 
 /* ─── Services ─── */

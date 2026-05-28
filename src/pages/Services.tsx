@@ -10,7 +10,7 @@ import { useTheme } from '@/contexts/ThemeContext'
 gsap.registerPlugin(ScrollTrigger)
 
 const HERO_IMAGE =
-  'https://res.cloudinary.com/dz6kxumoo/image/upload/v1778933752/Programmer_Cat1_tee8ls.jpg'
+  'https://res.cloudinary.com/dz6kxumoo/image/upload/f_auto,q_auto/v1778933752/Programmer_Cat1_tee8ls.jpg'
 
 const PROCESS = [
   {

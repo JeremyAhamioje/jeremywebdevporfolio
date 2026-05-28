@@ -20,7 +20,7 @@ export default function Preloader({ onDone }: Props) {
       { opacity: 0, y: 18, letterSpacing: '0.4em' },
       { opacity: 1, y: 0, letterSpacing: '0.18em', duration: 1.1, ease: 'power3.out' }
     )
-    .to({}, { duration: 0.9 }) // hold
+    .to({}, { duration: 0.35 }) // hold
     .to(text, { opacity: 0, y: -12, duration: 0.6, ease: 'power2.in' })
     .to(el, {
       opacity: 0,
@@ -42,7 +42,7 @@ export default function Preloader({ onDone }: Props) {
     }}>
       {/* Logo mark */}
       <img
-        src="https://res.cloudinary.com/dz6kxumoo/image/upload/v1778837798/Gemini_Generated_Image_alhhftalhhftalhh-removebg-preview_zpil3k.png"
+        src="https://res.cloudinary.com/dz6kxumoo/image/upload/f_auto,q_auto/v1778837798/Gemini_Generated_Image_alhhftalhhftalhh-removebg-preview_zpil3k.png"
         alt="Jeremy Ahamioje"
         style={{ width: 256, height: 256, objectFit: 'contain', opacity: 0.9, marginBottom: 0 }}
       />
