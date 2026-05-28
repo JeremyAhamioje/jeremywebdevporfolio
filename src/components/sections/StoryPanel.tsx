@@ -203,6 +203,7 @@ export default function StoryPanel({ panel }: Props) {
           <video
             ref={videoRef}
             src={panel.video}
+            poster={panel.image}
             muted
             loop
             playsInline

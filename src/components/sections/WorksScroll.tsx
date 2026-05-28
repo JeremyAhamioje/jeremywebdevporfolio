@@ -217,6 +217,7 @@ function ProjectSlide({ proj, index }: { proj: typeof HOME_PROJECTS[0]; index: n
           <video
             ref={videoRef}
             src={proj.video}
+            poster={proj.image}
             muted
             loop
             playsInline
