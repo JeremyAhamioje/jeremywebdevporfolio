@@ -107,6 +107,10 @@ export default function StoryPanel({ panel }: Props) {
     return () => io.disconnect()
   }, [])
 
+  const videoPoster = panel.video
+    ? panel.video.replace('f_auto,q_auto/', 'so_2,f_jpg,q_80/').replace(/\.mp4$/, '.jpg')
+    : undefined
+
   const Left = (
     <div ref={leftRef} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
       <span
@@ -203,7 +207,7 @@ export default function StoryPanel({ panel }: Props) {
           <video
             ref={videoRef}
             src={panel.video}
-            poster={panel.image}
+            poster={videoPoster}
             muted
             loop
             playsInline

@@ -104,6 +104,9 @@ export default function WorksScroll({ onViewAll }: { onViewAll: () => void }) {
 /* ── Individual project slide ── */
 function ProjectSlide({ proj, index }: { proj: typeof HOME_PROJECTS[0]; index: number }) {
   const videoRef = useRef<HTMLVideoElement>(null)
+  const poster = proj.video
+    ? proj.video.replace('f_auto,q_auto/', 'so_2,f_jpg,q_80/').replace(/\.mp4$/, '.jpg')
+    : undefined
 
   // Lazy-play: only decode/play when the video is on-screen.
   // Reduces GPU memory pressure during the horizontal-scroll pin.
@@ -217,7 +220,7 @@ function ProjectSlide({ proj, index }: { proj: typeof HOME_PROJECTS[0]; index: n
           <video
             ref={videoRef}
             src={proj.video}
-            poster={proj.image}
+            poster={poster}
             muted
             loop
             playsInline
