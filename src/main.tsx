@@ -13,6 +13,8 @@ const FreelancePage     = lazy(() => import('@/pages/Freelance'))
 const DesignPage        = lazy(() => import('@/pages/Design'))
 const MotionDesignPage  = lazy(() => import('@/pages/MotionDesign'))
 const ProductMgmtPage   = lazy(() => import('@/pages/ProductManagement'))
+const Blog              = lazy(() => import('@/pages/Blog'))
+const BlogPost          = lazy(() => import('@/pages/BlogPost'))
 
 // StrictMode is intentionally NOT used — see comment in Services.tsx for rationale.
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -29,6 +31,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Route path="/design"            element={<DesignPage />}      />
           <Route path="/motion-design"     element={<MotionDesignPage />}/>
           <Route path="/product-management" element={<ProductMgmtPage />} />
+          <Route path="/blog"              element={<Blog />}            />
+          <Route path="/blog/:slug"        element={<BlogPost />}         />
         </Routes>
       </Suspense>
     </BrowserRouter>

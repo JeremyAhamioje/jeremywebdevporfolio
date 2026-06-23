@@ -74,7 +74,15 @@ export interface ProjectCard {
 
 export const HOME_PROJECTS: ProjectCard[] = [
   {
-    num: '01/', title: 'Shredded', subtitle: 'Shredded',
+    num: '01/', title: 'Parking Arbitrage', subtitle: 'Parking',
+    year: '2026', role: 'Full-Stack Dev',
+    desc: 'Real-time intelligence for parking arbitrage among other tools — live prices across SpotHero, ParkWhiz & Way.com, scraped to Supabase and surfaced in a Next.js dashboard.',
+    video: 'https://res.cloudinary.com/dz6kxumoo/video/upload/f_auto,q_auto/v1782160141/Screen_Recording_2026-06-22_212206_e1cnt6.mp4',
+    image: 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=1200&q=80',
+    tags: ['Next.js', 'Supabase'], href: 'https://parking-arbitrage-ui.vercel.app/',
+  },
+  {
+    num: '02/', title: 'Shredded', subtitle: 'Shredded',
     year: '2025', role: 'Full-Stack Dev',
     desc: 'Modern sportswear e-commerce platform. Full shopping experience for a clothing brand.',
     video: 'https://res.cloudinary.com/dz6kxumoo/video/upload/f_auto,q_auto/v1778830379/Screen_Recording_2026-05-14_014609_ymjfls.mp4',
@@ -82,7 +90,7 @@ export const HOME_PROJECTS: ProjectCard[] = [
     tags: ['Next.js', 'MongoDB'], href: 'https://www.shreddedcollective.store/',
   },
   {
-    num: '02/', title: 'Jeremy AI', subtitle: 'Jeremy AI',
+    num: '03/', title: 'Jeremy AI', subtitle: 'Jeremy AI',
     year: '2025', role: 'Frontend Dev',
     desc: 'AI productivity assistant powered by Gemini API. AI chat, DOCX conversion, file merger.',
     video: 'https://res.cloudinary.com/dz6kxumoo/video/upload/f_auto,q_auto/v1778829927/Screen_Recording_2026-05-15_041350_eiozl9.mp4',
@@ -90,7 +98,7 @@ export const HOME_PROJECTS: ProjectCard[] = [
     tags: ['Vite', 'Gemini API'], href: 'https://jeremyaiassistant.vercel.app/',
   },
   {
-    num: '03/', title: 'Maison Jeremy', subtitle: 'Maison',
+    num: '04/', title: 'Maison Jeremy', subtitle: 'Maison',
     year: '2025', role: 'Design & Dev',
     desc: 'Luxury watch brand concept website exploring branding, visual storytelling and premium UI.',
     video: 'https://res.cloudinary.com/dz6kxumoo/video/upload/f_auto,q_auto/v1778829850/Screen_Recording_2026-05-15_043734_vdph1i.mp4',
@@ -98,7 +106,7 @@ export const HOME_PROJECTS: ProjectCard[] = [
     tags: ['Next.js', 'GSAP'], href: 'https://maison-jeremy.vercel.app/',
   },
   {
-    num: '04/', title: 'Nightshift Observatory', subtitle: 'Nightshift',
+    num: '05/', title: 'Nightshift Observatory', subtitle: 'Nightshift',
     year: '2024', role: 'Creative Dev',
     desc: 'Astronomy e-learning platform with interactive Three.js visuals and educational simulations.',
     video: 'https://res.cloudinary.com/dz6kxumoo/video/upload/f_auto,q_auto/v1778830064/Screen_Recording_2026-05-15_041901_bc6gqd.mp4',
@@ -106,7 +114,7 @@ export const HOME_PROJECTS: ProjectCard[] = [
     tags: ['React', 'Three.js'], href: 'https://nightshift-observatory.vercel.app/',
   },
   {
-    num: '05/', title: 'Jeremy Blog', subtitle: 'Blog',
+    num: '06/', title: 'Jeremy Blog', subtitle: 'Blog',
     year: '2024', role: 'Full-Stack Dev',
     desc: 'Custom Strapi-powered blog with bespoke admin logic, CMS integration and content architecture.',
     video: 'https://res.cloudinary.com/dz6kxumoo/video/upload/f_auto,q_auto/v1778829846/Screen_Recording_2026-05-15_043303_mv00jl.mp4',
@@ -134,7 +142,7 @@ export interface ProjectPanel {
 export const ALL_PROJECTS: ProjectPanel[] = [
   { num: '01', super: 'E-Commerce / Full-Stack', title: 'SHREDDED',
     desc: 'Modern sportswear e-commerce platform. Full shopping experience — product catalog, cart, checkout, and admin.',
-    tags: ['Next.js', 'MongoDB', 'Stripe'],
+    tags: ['Next.js', 'MongoDB', 'Paystack'],
     video: 'https://res.cloudinary.com/dz6kxumoo/video/upload/f_auto,q_auto/v1778830379/Screen_Recording_2026-05-14_014609_ymjfls.mp4',
     image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=900&q=80',
     year: '2025', role: 'Full-Stack Dev', href: 'https://www.shreddedcollective.store', panelBg: 'linear-gradient(135deg,#0a0a0a,#1a0a00)' },

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { Github, Instagram, Linkedin, Twitter, MessageCircle, Mail } from 'lucide-react'
+import { Github, Instagram, Linkedin, Twitter, MessageCircle, Mail, BookOpen } from 'lucide-react'
 import { DRAG_CARDS, SITE_NAME, LOGO_URL } from '@/lib/constants'
 import { useTheme } from '@/contexts/ThemeContext'
 
@@ -100,6 +100,7 @@ function DragCard({ id, bg, content, initStyle }: {
 }
 
 const SOCIALS = [
+  { label: 'Journal',   href: '/blog', Icon: BookOpen      },
   { label: 'Twitter',   href: '#', Icon: Twitter        },
   { label: 'Instagram', href: '#', Icon: Instagram      },
   { label: 'LinkedIn',  href: '#', Icon: Linkedin       },

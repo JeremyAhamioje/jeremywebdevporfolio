@@ -48,6 +48,14 @@ export default function Navbar() {
                 {s}
               </a>
             ))}
+            <a
+              href="/blog"
+              style={{ fontFamily: 'var(--font-mono)', fontSize: 12, letterSpacing: '.06em', color: 'var(--nav-link)', transition: 'color .2s' }}
+              onMouseEnter={e => (e.currentTarget.style.color = 'var(--volt)')}
+              onMouseLeave={e => (e.currentTarget.style.color = 'var(--nav-link)')}
+            >
+              journal
+            </a>
           </div>
 
           {/* Theme toggle — always visible */}
@@ -116,6 +124,22 @@ export default function Navbar() {
             {s}
           </a>
         ))}
+        <a
+          href="/blog"
+          onClick={close}
+          style={{
+            fontFamily: 'var(--font-mono)', fontSize: 14, letterSpacing: '.1em',
+            color: 'var(--nav-link)', textDecoration: 'none',
+            padding: '0.85rem 0',
+            borderBottom: '1px solid var(--nav-border)',
+            transition: 'color .2s',
+            textTransform: 'uppercase',
+          }}
+          onMouseEnter={e => (e.currentTarget.style.color = 'var(--volt)')}
+          onMouseLeave={e => (e.currentTarget.style.color = 'var(--nav-link)')}
+        >
+          journal
+        </a>
       </div>
 
       {/* Backdrop */}

@@ -10,6 +10,7 @@ import WorksScroll from '@/components/sections/WorksScroll'
 import Tools       from '@/components/sections/Tools'
 import Services    from '@/components/sections/Services'
 import Affairs     from '@/components/sections/Affairs'
+import Journal     from '@/components/sections/Journal'
 import Footer      from '@/components/sections/Footer'
 import { usePageTransition } from '@/hooks/usePageTransition'
 
@@ -75,6 +76,7 @@ export default function Home() {
         <Tools />
         <Services onViewAll={() => go('/services')} />
         <Affairs />
+        <Journal onOpen={slug => go(`/blog/${slug}`)} onViewAll={() => go('/blog')} />
         <Footer />
       </div>
     </>
