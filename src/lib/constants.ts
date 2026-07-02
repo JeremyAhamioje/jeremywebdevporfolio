@@ -8,7 +8,7 @@ export const HERO_VIDEO_URL =
   'https://res.cloudinary.com/dz6kxumoo/video/upload/f_auto,q_auto/v1774818497/output-onlinegiftools_online-video-cutter.com_z7v6ac.mp4'
 
 export const PROFILE_IMAGE_URL =
-  'https://res.cloudinary.com/dz6kxumoo/image/upload/f_auto,q_auto/v1779883714/Gemini_Generated_Image_ir1zs1ir1zs1ir1z-removebg-preview_swf1pg.png'
+  'https://res.cloudinary.com/dz6kxumoo/image/upload/f_auto,q_auto/v1783013001/Gemini_Generated_Image_qow7tqqow7tqqow7_hpxxnj.png'
 
 export const LOGO_URL =
   'https://res.cloudinary.com/dz6kxumoo/image/upload/f_auto,q_auto/v1778837798/Gemini_Generated_Image_alhhftalhhftalhh-removebg-preview_zpil3k.png'
@@ -230,6 +230,12 @@ export const ALL_PROJECTS: ProjectPanel[] = [
     video: '',
     image: 'https://res.cloudinary.com/dz6kxumoo/image/upload/f_auto,q_auto/v1778836345/Screenshot_2026-05-15_045603_ijhyhu.png',
     year: '2022', role: 'UI/UX Design', href: '/wip', panelBg: 'linear-gradient(135deg,#0d0a00,#1a1200)', flip: true },
+  { num: '16', super: 'Framer / Interaction', title: 'FRAMER\nPROJECT',
+    desc: 'An interactive build crafted in Framer — motion, layout and micro-interactions. Currently in development; a live link is coming soon.',
+    tags: ['Framer', 'Interaction', 'Motion'],
+    video: 'https://res.cloudinary.com/dz6kxumoo/video/upload/f_auto,q_auto/v1778830072/Video_Project_3_y1orod.mp4',
+    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=900&q=80',
+    year: '2026', role: 'Design & Dev', href: '', panelBg: 'linear-gradient(135deg,#0a0a14,#12081f)' },
 ]
 
 /* ─── Tools ─── */

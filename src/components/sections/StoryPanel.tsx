@@ -170,25 +170,45 @@ export default function StoryPanel({ panel }: Props) {
         ))}
       </div>
 
-      <a
-        className="p-reveal"
-        href={panel.href}
-        style={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: 8,
-          marginTop: '0.5rem',
-          fontFamily: 'var(--font-mono)',
-          fontSize: 12,
-          letterSpacing: '.08em',
-          color: 'var(--text)',
-          borderBottom: '1px solid var(--border-mid)',
-          paddingBottom: 4,
-          width: 'fit-content',
-        }}
-      >
-        View Project <ArrowRight size={14} strokeWidth={1.5} />
-      </a>
+      {panel.href ? (
+        <a
+          className="p-reveal"
+          href={panel.href}
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 8,
+            marginTop: '0.5rem',
+            fontFamily: 'var(--font-mono)',
+            fontSize: 12,
+            letterSpacing: '.08em',
+            color: 'var(--text)',
+            borderBottom: '1px solid var(--border-mid)',
+            paddingBottom: 4,
+            width: 'fit-content',
+          }}
+        >
+          View Project <ArrowRight size={14} strokeWidth={1.5} />
+        </a>
+      ) : (
+        <span
+          className="p-reveal"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 8,
+            marginTop: '0.5rem',
+            fontFamily: 'var(--font-mono)',
+            fontSize: 12,
+            letterSpacing: '.08em',
+            color: 'var(--volt)',
+            width: 'fit-content',
+          }}
+        >
+          <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--volt)', display: 'inline-block' }} />
+          In Development
+        </span>
+      )}
     </div>
   )
 

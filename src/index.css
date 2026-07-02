@@ -423,7 +423,18 @@ img { display: block; max-width: 100%; }
   .proj-track > div[class*="slide"] { width: 100vw !important; min-height: 100svh; grid-template-columns: 1fr !important; }
   .proj-right-col { margin: 1.25rem !important; height: 55vw !important; }
   .proj-ghost-num { font-size: 8rem !important; opacity: 0.05 !important; }
-  .gradient-slide { width: 100vw !important; height: 40vw !important; }
+  /* No horizontal scroll on mobile, so the transition runs top→bottom instead
+     of left→right. Stops match neighbours: grad-0 = cream card above,
+     grad-88 = dark CTA below — a seamless light→dark bridge. */
+  .gradient-slide {
+    /* min-height:0 overrides the shared `div[class*="slide"]` 100svh rule so
+       this reads as a compact transition band, not a full empty screen. */
+    width: 100vw !important; height: 52vw !important; min-height: 0 !important;
+    background: linear-gradient(to bottom,
+      var(--grad-0) 0%, var(--grad-25) 18%, var(--grad-40) 34%,
+      var(--grad-55) 52%, var(--grad-70) 70%, var(--grad-88) 90%) !important;
+  }
+  .gradient-glow-dark, .gradient-glow-light { display: none !important; }
   .cta-slide { padding: 3.5rem 1.25rem !important; height: auto !important; min-height: 80svh; }
   .tools-grid { grid-template-columns: repeat(2, 1fr) !important; }
   .affairs-section { padding-left: 1.25rem !important; }
