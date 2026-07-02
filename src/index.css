@@ -416,8 +416,9 @@ img { display: block; max-width: 100%; }
   .hero-badge-day { font-size: clamp(3rem,15vw,5.5rem) !important; }
   .about-outer-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
   .about-left-col img { max-width: 220px !important; }
-  .digest-row { grid-template-columns: 80px 1fr !important; }
-  .digest-thumbs { display: none !important; }
+  .digest-row { grid-template-columns: 76px 1fr auto !important; gap: 1rem !important; }
+  .digest-thumbs { display: flex !important; }
+  .digest-thumb { width: 60px !important; height: 60px !important; }
   .proj-outer { height: auto !important; overflow: visible !important; }
   .proj-track { flex-direction: column !important; width: 100% !important; }
   .proj-track > div[class*="slide"] { width: 100vw !important; min-height: 100svh; grid-template-columns: 1fr !important; }

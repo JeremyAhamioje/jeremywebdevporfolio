@@ -7,9 +7,9 @@ import { useTheme } from '@/contexts/ThemeContext'
 gsap.registerPlugin(ScrollTrigger)
 
 const DIGEST_ROWS: { label: string; cardKey: number; imgSlice: [number, number] }[] = [
-  { label: 'Design',      cardKey: 0, imgSlice: [0, 4] },
-  { label: 'Development', cardKey: 1, imgSlice: [4, 7] },
-  { label: 'Others',      cardKey: 2, imgSlice: [7, 10] },
+  { label: 'Design',      cardKey: 0, imgSlice: [0, 1] },
+  { label: 'Development', cardKey: 1, imgSlice: [4, 5] },
+  { label: 'Others',      cardKey: 2, imgSlice: [7, 8] },
 ]
 
 export default function About() {
@@ -37,7 +37,6 @@ export default function About() {
   const muted = isDark ? 'rgba(26,18,8,0.55)' : 'rgba(245,240,232,0.45)'
   const faint = isDark ? 'rgba(26,18,8,0.28)'  : 'rgba(245,240,232,0.2)'
   const bdr  = isDark ? 'rgba(26,18,8,0.1)' : 'rgba(255,255,255,0.07)'
-  const surf = isDark ? 'rgba(26,18,8,0.04)' : 'rgba(255,255,255,0.04)'
 
   return (
     <section
@@ -132,13 +131,13 @@ export default function About() {
                 {/* Thumbnails */}
                 <div className="digest-thumbs" style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'nowrap' }}>
                   {imgs.map((src, i) => (
-                    <div key={i} style={{ width: 100, height: 100, borderRadius: 6, overflow: 'hidden', flexShrink: 0, background: surf }}>
+                    <div key={i} className="digest-thumb" style={{ width: 104, height: 104, flexShrink: 0 }}>
                       <img
                         src={src}
                         alt=""
                         loading="lazy"
-                        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.3s ease' }}
-                        onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.12)')}
+                        style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block', transition: 'transform 0.3s ease' }}
+                        onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.08)')}
                         onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
                       />
                     </div>
